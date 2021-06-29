@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Anime X Fashion</title>
+        <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+        <script src="jquery/jquery-1.11.1.min.js"></script>
+        <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            /* Css styling about us page for making more interactive and responsive */
+            * {
+                box-sizing: border-box;
+            }
+
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 5px;
+            }
+
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            h3{
+                text-transform: capitalize;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+
+            .column img {
+                border-radius: 50%;
+                width: 40%;
+            }
+
+            /* Making page responsive */
+            @media screen and (max-width: 500px) {
+                .column {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <center>
+                <h1 style="text-transform: capitalize; text-align: center;"><span style="color:orange;">Anime</span> 
+                    x 
+                    <span style="color:orangered;">Fashion</span></h1>
+            </center>
+        </div>
+
+         <!-- Content -->
+        <div data-role="content">
+            <!-- About us -->
+            <div class="ui-body ui-body-a ui-corner-all">
+                <h3>What is <span style="color:darkorange;">Anime</span> x <span style="color:orangered;">Fashion</span>?</h3>
+                <p>Anime X Fashion is a website that mainly for collecting review about anime fashion, we are collecting from all 
+                    over the place and gather it here so that we can be the best and trusted anime review website.</p>
+            </div>
+            <br>
+             <!-- Team Member -->
+            <div class="ui-body ui-body-a ui-corner-all">
+                <h3>Team Members</h3>
+                <center>
+                <div class="row">
+                    <div class="column">
+                        <img src="images/teamicon/team1.png" alt="team1">
+                        <div><h5>Muaazin</h5></div>
+                    </div>
+                    <div class="column">
+                        <img src="images/teamicon/team2.png" alt="team2">
+                        <div><h5>Said</h5></div>
+                    </div>
+                    <div class="column">
+                        <img src="images/teamicon/team3.png" alt="team3">
+                        <div><h5>Waied</h5></div>
+                    </div>
+                </div>
+                </center>
+            </div>
+            <br>
+            <!-- Contact Us -->
+            <div class="ui-body ui-body-a ui-corner-all">
+                <h3>Contact Us</h3>
+                <center>
+                    <a href="mailto: dummysz12345@gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:24px;"></i></a>
+                    <br>
+                    <!--Credit to the website we take the picture and review -->
+                    <h6>
+                        Credit to 
+                        <a href="https://atsuko.com" style="text-decoration: none; color: red;">Atsuko</a> 
+                        and 
+                        <a href="https://imouri.com " style="text-decoration: none; color: red;">imouri</a>
+                        for the pictures and contents. <br> Thank You!
+                    </h6>
+                </center>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div data-role="footer" data-position="fixed" data-theme="d"> 
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul style="text-transform: uppercase;">
+                    <li><a href="index.html" dataprefetch="true" data-transition="flip" rel="external">Home</a></li>
+                    <li><a href="reviewhoodie.html" data-prefetch="true"data-transition="fade" rel="external">Product</a></li>
+                    <li><a href="about_us.html" data-prefetch="true"data-transition= "slide" rel="external" class="ui-btn-active">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

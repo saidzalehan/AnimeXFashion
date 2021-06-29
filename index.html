@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Anime X Fashion</title>
+        <style>
+            /* Css styling home page for making more interactive and responsive */
+            *{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            body{
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .homepage{
+                background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0,0.6)), url("images/wallpaper.jpg") center/cover no-repeat;
+                color: #f0f0f0;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                width: 100%;
+            }
+
+            .boarder{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 50vw;
+                position: relative;
+                border: 1px solid transparent;
+                border-radius: 10px;
+            }
+
+            .content{
+                padding: 50px 0;
+                border: 2px solid white;
+                border-radius: 20px;
+            }
+
+            .content h2{
+                font-size: 36px;
+                padding-bottom: 20px;
+                color: white;
+                border-radius: 10px;
+            }
+
+            .content p{
+                padding-top: 10px;
+                font-weight: 300%;
+                line-height: 2.0;
+                font-size: 20px;
+                color: white;
+            }
+
+            .content h5{
+                color: white;
+                font-size: 20px;
+                font-weight: 300%;
+            }
+
+            .animelogo{
+                color: darkorange;
+            }
+
+            .fashionlogo{
+                color: orangered;
+            }
+
+            nav{
+                border: 10px solid transparent;
+                border-radius: 5px;
+            }
+
+            nav ul{
+                list-style: none;
+                display: flex;
+            }
+
+            nav ul li{
+                display: block;
+                padding: 12px 0;
+                width: 120px;
+                transition: background 0.5s ease;
+                background-color: red;
+                border: 2px solidt transparent;
+                border-radius: 10px;
+                margin: 4px;
+            }
+
+            nav ul a{
+                text-decoration-color: none;
+                color:white;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+                font-weight: 1000;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+            nav ul li:hover{
+                background: orange;
+            }
+
+            /* Making page responsive */
+            @media screen and (max-width: 600){
+                nav ul li{
+                    width: 70px;
+                    padding: 7px 0;
+                }
+                nav ul a{
+                    font-size: 10px;
+                }
+                span, h2{
+                    font-size: 30px;
+                }
+            }
+
+            @media screen and (max-width: 360px){
+                span, h2{
+                    font-size: 25px;
+                }
+            }
+
+            @media screen and (max-width: 280px){
+                span, h2{
+                    font-size: 20px;
+                }
+            }
+
+            @media screen and (max-width: 768px){
+                .boarder{
+                    width: 90vw;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Homepage -->
+        <div class="homepage">
+            <div class = "boarder">
+                <div class = "content">
+                    <!-- Text Auto Typing -->
+                    <h5><span class="typed-text""></span><span class="cursor">&nbsp;</span></h5>
+                    <br>
+                    <!--Content-->
+                    <h2><span class="animelogo"">Anime</span> X <span class="fashionlogo">Fashion</span></h2>
+                    <p>
+                        Fashion is to express yourself, without being afraid of showing who you are. 
+                        Something that once started with an edgy Anime t-shirt from enthusiastic teenagers, has turned out into a growing international fan-base. 
+                    </p>
+                </div>
+
+                <!-- Navbar -->
+                <nav>
+                    <ul>
+                        <li><a href = "reviewhoodie.html" >Product</a></li>
+                        <li><a href = "about_us.html">About Us</a></li>
+                    </ul>
+                </nav>
+                <br>
+            </div>
+        </div>
+        <!-- Linked JavaScript file for making text typing automatic -->
+        <script src="script.js"></script>
+    </body>
+</html>
