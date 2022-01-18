@@ -1,6 +1,6 @@
 # AnimeXFashion
 Check Out my First Website 
-http://animexfashion.ml
+https://saidzalehan.github.io/AnimeXFashion/
 
 This website using 
 1. HTML
